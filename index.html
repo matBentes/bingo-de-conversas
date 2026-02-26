@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bingo de Conversas - 1v1 Meeting</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Bingo de Conversas</h1>
+    <p>1v1 Meeting Edition</p>
+  </header>
+
+  <div class="controls">
+    <button class="btn btn-primary" id="new-card-btn">Nova Cartela</button>
+    <button class="btn btn-secondary" id="reset-btn">Limpar Marcacoes</button>
+  </div>
+
+  <div class="bingo-banner" id="bingo-banner">BINGO!</div>
+
+  <div class="bingo-container">
+    <div class="bingo-grid" id="bingo-grid"></div>
+  </div>
+
+  <canvas id="confetti-canvas"></canvas>
+
+  <section class="add-topic">
+    <h2>Adicionar Topico</h2>
+    <div class="add-topic-form">
+      <input type="text" id="topic-input" placeholder="Ex: Citou Elon Musk" maxlength="80">
+      <button class="btn btn-primary" id="add-topic-btn">Adicionar</button>
+    </div>
+  </section>
+
+  <section class="topics-section">
+    <h2>Topicos Disponiveis</h2>
+    <p class="topics-count" id="topics-count"></p>
+    <div class="topics-list" id="topics-list"></div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
